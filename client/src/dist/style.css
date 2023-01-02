@@ -243,3 +243,74 @@
   background-color: #b9e7e7;
   color: black;
 }
+.app .container .add {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+.app .container .add .content {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.app .container .add .content input {
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+.app .container .add .content .editorContainer {
+  height: 300px;
+  overflow: scroll;
+  border: 1px solid lightgray;
+}
+.app .container .add .content .editorContainer .editor {
+  height: 100%;
+  border: none;
+}
+.app .container .add .menu {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.app .container .add .menu .item {
+  border: 1px solid lightgray;
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #555;
+}
+.app .container .add .menu .item h1 {
+  font-size: 20px;
+}
+.app .container .add .menu .item .file {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.app .container .add .menu .item .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.app .container .add .menu .item .buttons :first-child {
+  cursor: pointer;
+  color: teal;
+  background-color: white;
+  border: 1px solid teal;
+  padding: 3px 5px;
+}
+.app .container .add .menu .item .buttons :last-child {
+  cursor: pointer;
+  color: white;
+  background-color: teal;
+  border: 1px solid teal;
+  padding: 3px 5px;
+}
+.app .container .add .menu .item .cat {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: teal;
+}
