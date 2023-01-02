@@ -13,7 +13,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 var register = function register(req, res) {
   //check exisiting user
-  var q = "SELECT * FROM  users WHERE email=? OR username =?";
+  var q = "SELECT * FROM  users WHERE email = ? OR username = ?";
 
   _db.db.query(q, [req.body.email, req.body.username], function (err, data) {
     if (err) return res.json(err);

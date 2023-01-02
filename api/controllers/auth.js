@@ -3,7 +3,7 @@ import bcrypt from "bcrypt";
 
 export const register = (req, res) => {
   //check exisiting user
-  const q = "SELECT * FROM  users WHERE email=? OR username =?";
+  const q = "SELECT * FROM  users WHERE email = ? OR username = ?";
   db.query(q, [req.body.email, req.body.username], (err, data) => {
     if (err) return res.json(err);
     if (data.length) return res.status(409).json("user already exists");
