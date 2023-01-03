@@ -8,13 +8,10 @@ var _users = _interopRequireDefault(require("./routes/users.js"));
 
 var _auth = _interopRequireDefault(require("./routes/auth.js"));
 
-var _cookieParser = _interopRequireDefault(require("cookie-parser"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var app = (0, _express["default"])();
 app.use(_express["default"].json());
-app.use((0, _cookieParser["default"])());
 app.use("/api/posts", _posts["default"]);
 app.use("/api/users", _users["default"]);
 app.use("/api/auth", _auth["default"]);
